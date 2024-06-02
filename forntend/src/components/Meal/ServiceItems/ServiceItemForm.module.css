@@ -1,0 +1,44 @@
+.form {
+  text-align: right;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #fcce00;
+  border: 2px solid #fcce00;
+  color: #282c34;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.form button::after {
+  content: "Add the chosen service"; 
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #282c34;
+  color: #fcce00;
+  padding: 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+.form button:hover::after,
+.form button:active::after {
+  opacity: 1;
+  visibility: visible;
+  bottom: 110%;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #fcce00;
+  border-color: #fcce00;
+}

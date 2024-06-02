@@ -1,0 +1,106 @@
+.header-ppage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c35;
+  color: white;
+}
+
+.logo-ppage {
+  display: flex;
+  align-items: center;
+}
+
+.icon-ppage {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.login-ppage {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button-ppage {
+  width: 50px;
+  cursor: pointer;
+}
+
+.title-ppage {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img-container {
+  background-image: url(../components/assets/garage.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.orders-container-p {
+  padding: 20px;
+  position: relative;
+}
+
+.table-container-p {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+
+.orders-table-p {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+
+.orders-table-p th,
+.orders-table-p td {
+  border: 1px solid #282c35;
+  padding: 8px;
+  text-align: left;
+}
+
+.orders-table-p th {
+  background-color: #ffeb3b;
+  color: #282c35;
+}
+.orders-table-p td {
+  color: white;
+}
+.button-p {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button-p:hover {
+  background-color: #d32f2f;
+}
+
+.personal-details-p {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  width: 50%;
+  margin: 20px auto;
+  color: white;
+}

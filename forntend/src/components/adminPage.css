@@ -1,0 +1,101 @@
+.admin-container-ap {
+  background-image: url(../components/assets/adminpage.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header-apage-ap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c35;
+  color: white;
+}
+
+.logo-apage-ap {
+  display: flex;
+  align-items: center;
+}
+
+.icon-apage-ap {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.login-apage-ap {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button-apage-ap {
+  width: 50px;
+  cursor: pointer;
+}
+
+.title-apage-ap {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.table-container-ap {
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+
+.table-wrapper-ap {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.orders-table-ap {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.orders-table-ap th,
+.orders-table-ap td {
+  border: 1px solid transparent;
+  padding: 8px;
+  text-align: left;
+}
+
+.orders-table-ap th {
+  background-color: #ebdb00;
+  color: #000000;
+  position: sticky;
+  top: 0;
+}
+
+.orders-table-ap td {
+  color: rgb(255, 255, 255);
+}
+
+.button-ap {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button-ap:hover {
+  background-color: #45a049;
+}
+
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
