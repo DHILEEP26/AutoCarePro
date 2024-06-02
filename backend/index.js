@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to AutoCarePro!');
 });
 
+
 // USER SIDE SERVERS
 
 app.post("/api/login", (req, res) => {
@@ -102,6 +103,7 @@ app.post("/api/orders", (req, res) => {
 
 app.get("/api/services", (req, res) => {
   const sqlGet = "SELECT * FROM available_services";
+  res.send('Welcome to AutoCarePro!');
   connection.query(sqlGet, (error, result) => {
     if (error) {
       console.error(error);
