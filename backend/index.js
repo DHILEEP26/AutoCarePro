@@ -27,6 +27,10 @@ connection.connect((err) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to AutoCarePro!');
+});
+
 // USER SIDE SERVERS
 
 app.post("/api/login", (req, res) => {
