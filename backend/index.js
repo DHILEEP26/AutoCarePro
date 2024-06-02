@@ -11,6 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(bodyparser.urlencoded({ extended: true }));
+const port = process.env.PORT || 4000;
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -200,7 +201,6 @@ app.put('/api/admin/orders/:id', (req, res) => {
 });
 
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });
