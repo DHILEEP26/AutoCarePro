@@ -7,7 +7,7 @@ import axios from "axios";
 const AvailableServices = () => {
   const [serviceFromDataBase,setServiceFromDataBase]=useState([]);
   const loadData = async () => {
-    const response = await axios.get("http://localhost:5000/api/services");
+    const response = await axios.get("https://autocarepro.onrender.com/api/services");
     setServiceFromDataBase(response.data);
   };
   useEffect(() => {

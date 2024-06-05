@@ -14,7 +14,7 @@ const AdminPage = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/admin/orders");
+        const response = await axios.get("https://autocarepro.onrender.com/api/admin/orders");
         setOrders(response.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -32,7 +32,7 @@ const AdminPage = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5000/api/admin/orders/${orderId}`, {
+      await axios.put(`https://autocarepro.onrender.com/api/admin/orders/${orderId}`, {
         status: "Approved",
         date_delivered: dateDelivered,
       });

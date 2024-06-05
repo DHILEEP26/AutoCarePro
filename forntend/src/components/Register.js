@@ -38,7 +38,7 @@ const AddPage = () => {
 
         try {
           const response = await axios.post(
-            "http://localhost:5000/api/register",
+            "https://autocarepro.onrender.com/api/register",
             { username, password }
           );
 

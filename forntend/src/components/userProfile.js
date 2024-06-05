@@ -21,7 +21,7 @@ const UserProfile = () => {
 
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/userprofile/${username}`
+          `https://autocarepro.onrender.com/api/userprofile/${username}`
         );
         setOrders(response.data);
       } catch (error) {

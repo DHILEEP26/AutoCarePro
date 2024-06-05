@@ -32,7 +32,7 @@ const Cart = (props) => {
   };
   const handlePlaceOrder = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/orders", {
+      const response = await axios.post("https://autocarepro.onrender.com/api/orders", {
         cartItems: cartCxt.items,
         username: localStorage.getItem('username'),
       });
