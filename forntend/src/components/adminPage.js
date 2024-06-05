@@ -77,7 +77,7 @@ const AdminPage = () => {
             <h1 className="title-apage-ap">AUTOCAREPRO</h1>
           </div>
           <div className="login-apage-ap">
-            <a title="User Login" onClick={handleLogout}>
+            <a href="/adminLogin" title="User Login" onClick={handleLogout}>
               <img src={logouticon} alt="User Login" className="icon-button-apage-ap" />
             </a>
           </div>

@@ -34,7 +34,7 @@ const UserProfile = () => {
 
   const handleStatusChange = async (orderId) => {
     try {
-      await axios.put(`http://localhost:5000/api/status/${orderId}`, {
+      await axios.put(`https://autocarepro.onrender.com/api/status/${orderId}`, {
         status: "Canceled",
       });
       setOrders((prevOrders) =>
